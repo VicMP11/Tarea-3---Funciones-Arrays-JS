@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <script>
+        const palabras = [
+            "hola", "mundo", "hola", "js", "mundo",
+            "hola", "filter", "js", "hola"
+        ]
+        const conteo = palabras.reduce((acc, palabra) => {
+            acc[palabra] = (acc[palabra] || 0) + 1;
+            return acc;
+        }, {})
+        console.log(conteo)
+    </script>
+</body>
+</html>

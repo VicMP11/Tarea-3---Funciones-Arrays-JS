@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <script>
+        const usuarios = [
+            { id: 1, nombre: "Ana", rol: "admin" },
+            { id: 2, nombre: "Luis", rol: "user" },
+            { id: 3, nombre: "Marta", rol: "user" },
+            { id: 4, nombre: "Carlos", rol: "admin" },
+        ]
+        const encontrado = usuarios.find(usuario => usuario.id === 3)
+        console.log(encontrado)
+    </script>
+</body>
+</html>
