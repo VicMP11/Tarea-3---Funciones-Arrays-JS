@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+</head>
+<body>
+    <script>
+        const empleados = [
+            { nombre: "Ana", salario: 2800 },
+            { nombre: "Luis", salario: 3500 },
+            { nombre: "Marta", salario: 2200 },
+            { nombre: "Carlos", salario: 4100 },
+        ]
+        const ordenados = [...empleados].sort((a, b) => b.salario - a.salario)
+        ordenados.forEach(e => console.log(e.nombre, "→", e.salario))
+    </script>
+</body>
+</html>

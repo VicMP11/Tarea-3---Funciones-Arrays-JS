@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+</head>
+<body>
+    <script>
+        const carrito = [
+            { nombre: "Teclado", precio: 45.99 },
+            { nombre: "Ratón", precio: 19.5 },
+            { nombre: "Monitor", precio: 199.0 },
+            { nombre: "Webcam", precio: 34.99 },
+        ]
+        let total = 0
+        carrito.forEach(item => {
+            console.log(item.nombre + ": " + item.precio.toFixed(2) + " €");
+            total += item.precio
+        })
+        console.log("─────────────────")
+        console.log("Total:", total.toFixed(2) + " €")
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+</head>
+<body>
+    <script>
+        const pedidos = [
+            { id: "P01", importe: 45.0, entregado: true },
+            { id: "P02", importe: 120.0, entregado: false },
+            { id: "P03", importe: 33.5, entregado: true },
+            { id: "P04", importe: 89.0, entregado: true },
+            { id: "P05", importe: 15.0, entregado: false },]; pedidos
+                .filter(p => p.entregado)
+                .map(p => ({ ...p, importeConIVA: p.importe * 1.21 }))
+                .sort((a, b) => b.importeConIVA - a.importeConIVA)
+                .forEach(p => {
+                    console.log(`${p.id} → ${p.importeConIVA.toFixed(2)} €`)
+                })
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+</head>
+<body>
+    <script>
+        const productos = [
+            { nombre: "Manzana", precio: 1.2 },
+            { nombre: "Kiwi", precio: 0.8 },
+            { nombre: "Mango", precio: 2.5 },
+        ]
+        const idx = productos.findIndex(p => p.nombre === "Kiwi")
+        if (idx !== -1) {
+            productos[idx].precio = 1.5
+        }
+        console.log(productos)
+    </script>
+</body>
+</html>
